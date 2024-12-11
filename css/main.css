@@ -90,3 +90,10 @@ main {
   background: var(--color-green);
   color: var(--color-grey-900);
 }
+
+@media only screen and (min-width: 1440px) {
+  main {
+    max-width: 24rem;
+    padding: 2.5rem;
+  }
+}
