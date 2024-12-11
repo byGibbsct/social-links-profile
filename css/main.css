@@ -1,0 +1,92 @@
+body {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+
+  color: var(--color-white);
+  background: var(--color-grey-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding: 8.5rem 1.94rem;
+}
+
+.sr-only {
+  color: transparent;
+  position: absolute;
+  left: 0;
+  font-size: 0px;
+}
+
+main {
+  background: var(--color-grey-800);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 19.57rem;
+  padding: 1.5rem;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  margin: 0 auto 1.65rem;
+  width: 5.625rem;
+}
+
+.user-info {
+  display: flex;
+  row-gap: 0.75rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-info__username {
+  font-size: 1.46rem;
+}
+
+.user-info__location {
+  color: var(--color-green);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.bio {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1.85rem 0;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.button-group__btn {
+  background: var(--color-grey-700);
+  border-radius: 0.54rem;
+  border: none;
+  font-size: 0.86rem;
+  padding: 1rem;
+  min-width: 100%;
+}
+
+.button-group__btn:hover {
+  background: var(--color-green);
+  color: var(--color-grey-900);
+}
+
+.button-group__btn a {
+  color: var(--color-white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-group__btn:hover a {
+  background: var(--color-green);
+  color: var(--color-grey-900);
+}
